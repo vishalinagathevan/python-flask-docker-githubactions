@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "vishali07" --password "${{ secrets.DOCKER_PASSWORD }}"
-        docker image build -t python-flask-docker-githubactions:latest .
-        docker push python-flask-docker-githubactions:latest
+        docker image build -t vishali07/python-flask-docker-githubactions .
+        docker push vishali07/python-flask-docker-githubactions
